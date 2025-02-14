@@ -25,7 +25,7 @@ A hybrid solution consists of:
 2. **L2:** Similarity retrieval, requiring a cosine similarity score of >0.9, using only the top result.
 
 #### **Validation Logic:**
-1. **V1:** Validate the data type of the classified uploaded column. If incorrect, it falls under AC3.
+1. **V1:** Validate the data type of the classified uploaded column. If it is incorrect, it falls under AC3.
 
 ### **Solution Flow**
 1. **Data Preparation and Embedding:** Use LLM to generate header descriptions for ground truth headers, then embed the header descriptions for similarity retrieval.
