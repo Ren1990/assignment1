@@ -24,12 +24,12 @@ A hybrid solution consists of:
 1. **L1:** Header name matching check, requiring a 100% match. English translation (supported by LLM) and text stripping are applied when applicable.
 2. **L2:** Similarity retrieval, requiring a cosine similarity score of >0.9, using only the top result.
 
-#### **Validation:**
+#### **Validation Logic:**
 1. **V1:** Validate the data type of the classified uploaded column. If incorrect, it falls under AC3.
 
 ### **Solution Flow**
 1. **Data Preparation and Embedding:** Use LLM to generate header descriptions for ground truth headers, then embed the header descriptions for similarity retrieval.
-2. **Classification Logic:** Apply L1, then apply L2 to the remaining unclassified uploaded BOM headers.
+2. **Classification:** Apply L1, then apply L2 to the remaining unclassified uploaded BOM headers.
 3. **Validation:** Apply V1.
 4. **Output AC:** Generate AC results.
 
