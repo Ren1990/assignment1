@@ -21,7 +21,7 @@ Design a solution to match unseen uploaded BOM headers with predefined categorie
 A hybrid solution consists of:
 
 #### **Classification Logic:**
-1. **L1:** Header name matching check, requiring a 100% match. English translation (supported by LLM) and text stripping are applied when applicable.
+1. **L1:** Header name matching check, requiring a 100% match. English translation (supported by LLM) and text stripping are applied when it is applicable.
 2. **L2:** Similarity retrieval, requiring a cosine similarity score of >0.9, using only the top result.
 
 #### **Validation Logic:**
