@@ -22,7 +22,7 @@ A hybrid solution consists of:
 
 #### **Classification Logic:**
 1. **L1:** Header name matching check, requiring a 100% match. English translation (supported by LLM) and text stripping are applied when it is applicable.
-2. **L2:** Similarity retrieval, requiring a cosine similarity score of >0.9, using only the top result.
+2. **L2:** Similarity retrieval, requiring a cosine similarity score of >=0.9, using only the top result.
 
 #### **Validation Logic:**
 1. **V1:** Validate the data type of the classified uploaded column. If it is incorrect, it falls under AC3.
